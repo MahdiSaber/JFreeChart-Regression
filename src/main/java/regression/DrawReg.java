@@ -21,7 +21,7 @@ import org.jfree.data.xy.XYSeriesCollection;
 import org.jfree.ui.ApplicationFrame;
 import org.jfree.ui.RefineryUtilities;
 
-public class PriceEstimator extends ApplicationFrame
+public class DrawReg extends ApplicationFrame
 {
 
 	private static final long serialVersionUID = 1L;
@@ -31,14 +31,14 @@ public class PriceEstimator extends ApplicationFrame
 
 	public static void main(String[] args) throws IOException
 	{
-		PriceEstimator demo = new PriceEstimator("prices.txt");
+		DrawReg demo = new DrawReg("prices.txt");
 		demo.pack();
 		RefineryUtilities.centerFrameOnScreen(demo);
 		demo.setVisible(true);
 		demo.drawRegressionLine();
 	}
 
-	public PriceEstimator(String inputFileName) throws IOException
+	public DrawReg(String inputFileName) throws IOException
 	{
 		super("Linear Regression");
 
